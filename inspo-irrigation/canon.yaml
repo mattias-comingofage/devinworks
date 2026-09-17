@@ -1,0 +1,240 @@
+# The canon: movements, historical stunts, and story mechanisms that outlast the
+# marketing news cycle. Each entry is reduced to a reusable MECHANISM so it can be
+# paired with current finds and used directly in ideation.
+#
+# Fields: id, name, era, kind (movement|stunt|mechanism|figure), mechanism (one
+# sentence, the transferable move), signals (keywords that mark a modern
+# descendant), prompts (how to steal it for a campaign), refs (where to read more).
+
+canon:
+  - id: readymade
+    name: "Duchamp's Readymade (Fountain)"
+    era: "1917"
+    kind: stunt
+    mechanism: "Recontextualise an ordinary object by placing it where it isn't supposed to be; the frame does the work, not the object."
+    signals: [readymade, recontextual, found object, ordinary, everyday, mundane, gallery, museum, unexpected place]
+    prompts:
+      - "What mundane developer artefact (a commit log, a bug report, a CI status) becomes art when framed as one?"
+      - "Where is the one place code is never shown, and what happens if it's shown there?"
+    refs: ["https://en.wikipedia.org/wiki/Fountain_(Duchamp)"]
+
+  - id: detournement
+    name: "Situationist détournement"
+    era: "1950s-60s"
+    kind: movement
+    mechanism: "Hijack an existing piece of culture (ad, billboard, film) and re-route its meaning against itself."
+    signals: [hijack, hack, subvert, billboard, remix, parody, culture jam, takeover, appropriat]
+    prompts:
+      - "Which existing tech-industry ritual (keynote, launch video, job post) can be re-routed to make the point?"
+    refs: ["https://en.wikipedia.org/wiki/D%C3%A9tournement"]
+
+  - id: fluxus-event-score
+    name: "Fluxus event scores (Yoko Ono, George Brecht)"
+    era: "1960s"
+    kind: movement
+    mechanism: "Publish an instruction, not an artwork; the audience (or anyone) executes it, so the piece scales without you."
+    signals: [instruction, participatory, score, anyone can, open call, user-generated, crowd, recipe, template]
+    prompts:
+      - "What is the one-line instruction a stranger could give Devin that produces something worth watching?"
+      - "Ship the campaign as a prompt others run, not a film others watch."
+    refs: ["https://en.wikipedia.org/wiki/Fluxus", "Yoko Ono, Grapefruit (1964)"]
+
+  - id: cage-433
+    name: "John Cage, 4'33\""
+    era: "1952"
+    kind: stunt
+    mechanism: "Remove the expected content entirely so the audience notices the frame, the room, and themselves."
+    signals: [silence, empty, blank, nothing, absence, minimal, void, restraint]
+    prompts:
+      - "What does an 'empty' demo look like — the engineer leaves the room and the audience watches the work happen alone?"
+    refs: ["https://en.wikipedia.org/wiki/4%E2%80%B233%E2%80%B3"]
+
+  - id: christo
+    name: "Christo & Jeanne-Claude (Wrapped Reichstag, The Gates)"
+    era: "1970s-2000s"
+    kind: figure
+    mechanism: "Monumental, temporary, self-funded transformation of a landmark; the years of permission-getting are part of the work."
+    signals: [wrapped, monumental, temporary, landmark, scale, city, public, installation, disappear]
+    prompts:
+      - "What's the landmark of software culture, and what does it look like transformed for 72 hours?"
+    refs: ["https://christojeanneclaude.net/"]
+
+  - id: barnum
+    name: "P.T. Barnum's humbugs (Feejee Mermaid, Cardiff Giant era)"
+    era: "1840s-1870s"
+    kind: figure
+    mechanism: "Stage a claim so bold people pay to argue about whether it's real; the debate is the distribution."
+    signals: [hoax, is it real, debate, controversy, fake, too good to be true, challenge, dare, bet]
+    prompts:
+      - "What claim about an AI engineer is provocative enough that people show up to disprove it — and we let them try?"
+    refs: ["https://en.wikipedia.org/wiki/P._T._Barnum"]
+
+  - id: yes-men
+    name: "The Yes Men (Dow/Bhopal BBC hoax, NYT special edition)"
+    era: "1999-2010s"
+    kind: figure
+    mechanism: "Impersonate the powerful and make them say what they should; the fake announces a better reality."
+    signals: [impersonat, fake press release, hoax, spoof, culture jam, prank, satire, fake edition]
+    prompts:
+      - "What's the announcement the tech industry should make but won't — and can we make it for them, honestly labelled?"
+    refs: ["https://theyesmen.org/"]
+
+  - id: kaprow-happening
+    name: "Allan Kaprow's Happenings"
+    era: "1959-"
+    kind: movement
+    mechanism: "Loosely scripted live event with no spectators, only participants; unrepeatable, so being there is the value."
+    signals: [happening, live, one night only, unrepeatable, participants, immersive, ephemeral, be there]
+    prompts:
+      - "Design the launch so it can only be experienced once, live, and everyone present has a job."
+    refs: ["https://en.wikipedia.org/wiki/Allan_Kaprow"]
+
+  - id: abramovic-durational
+    name: "Marina Abramović, The Artist Is Present / Rhythm 0"
+    era: "1974 / 2010"
+    kind: stunt
+    mechanism: "Endurance as spectacle: a simple act sustained far longer than reasonable becomes gripping; the audience tests the limits."
+    signals: [durational, endurance, marathon, 24 hours, 100 hours, nonstop, sits, stares, hours straight, livestream]
+    prompts:
+      - "Devin coding non-stop for 100 hours in a shop window with the public setting tasks — what's the rule set?"
+    refs: ["https://en.wikipedia.org/wiki/Rhythm_0"]
+
+  - id: banksy-shredder
+    name: "Banksy, Love is in the Bin"
+    era: "2018"
+    kind: stunt
+    mechanism: "Build the twist into the object years in advance; the reveal happens at the moment of maximum institutional attention."
+    signals: [shred, self-destruct, auction, reveal, hidden mechanism, planted, easter egg, trojan]
+    prompts:
+      - "What's planted in the product today that detonates publicly at a moment we choose?"
+    refs: ["https://en.wikipedia.org/wiki/Love_is_in_the_Bin"]
+
+  - id: orson-welles-wotw
+    name: "Orson Welles, War of the Worlds broadcast"
+    era: "1938"
+    kind: stunt
+    mechanism: "Use the native format of a trusted medium (news bulletin) to deliver fiction; the medium's credibility becomes the effect."
+    signals: [broadcast, breaking news, live bulletin, format, mockumentary, found footage, believed it was real]
+    prompts:
+      - "What's the trusted native format of developer life (an incident channel, a changelog, a status page) and what if a story arrived through it?"
+    refs: ["https://en.wikipedia.org/wiki/The_War_of_the_Worlds_(1938_radio_drama)"]
+
+  - id: trickster
+    name: "Trickster archetype (Loki, Anansi, Hermes, Coyote)"
+    era: "mythic"
+    kind: mechanism
+    mechanism: "A boundary-crosser breaks a rule everyone accepted, gets punished or celebrated, and the rule is never seen the same way again."
+    signals: [trickster, prank, loophole, rule-breaking, cheeky, mischief, outsmart, clever]
+    prompts:
+      - "Which unspoken rule of software work does Devin break, and what's the mischievous public demonstration of it?"
+    refs: ["Lewis Hyde, Trickster Makes This World (1998)"]
+
+  - id: golem-automaton
+    name: "Golem, Talos, the Mechanical Turk, Frankenstein"
+    era: "antiquity-1818"
+    kind: mechanism
+    mechanism: "The made-thing that acts on its own; every era's anxiety and awe about autonomy is told through it — and the Mechanical Turk reminds us audiences love to check for the human inside."
+    signals: [automaton, golem, frankenstein, mechanical turk, is there a human inside, wizard of oz, puppet, creature]
+    prompts:
+      - "Invert the Mechanical Turk: put a human in a box and let the audience discover the machine is the one doing the work."
+    refs: ["https://en.wikipedia.org/wiki/Mechanical_Turk"]
+
+  - id: oulipo-constraint
+    name: "Oulipo constraints (Perec's La Disparition, Queneau's Exercices de style)"
+    era: "1960s"
+    kind: movement
+    mechanism: "Impose an absurd formal constraint; the constraint generates the creativity and is itself the story."
+    signals: [constraint, without the letter, only using, rules, limitation, one take, 140 characters, exercise in style]
+    prompts:
+      - "Devin builds the same app 99 ways, or builds an app using only tweets as specs — what constraint is the headline?"
+    refs: ["https://en.wikipedia.org/wiki/Oulipo"]
+
+  - id: bauhaus-total
+    name: "Bauhaus / Gesamtkunstwerk"
+    era: "1919-1933"
+    kind: movement
+    mechanism: "Unify craft, art, and industry into one designed whole; the making is public and pedagogical."
+    signals: [workshop, craft, school, total work, unified, functional, teaching, apprentice, studio open]
+    prompts:
+      - "Run the campaign as a school: an open workshop where Devin and humans build side by side, in public, for a month."
+    refs: ["https://en.wikipedia.org/wiki/Bauhaus"]
+
+  - id: dada-cabaret
+    name: "Dada / Cabaret Voltaire"
+    era: "1916"
+    kind: movement
+    mechanism: "Answer a serious moment with deliberate nonsense; absurdity as critique when logic has failed."
+    signals: [absurd, nonsense, dada, surreal, chaos, anti-, manifesto, cabaret]
+    prompts:
+      - "What's the deliberately nonsensical software Devin ships that says something true about the industry's seriousness?"
+    refs: ["https://en.wikipedia.org/wiki/Dada"]
+
+  - id: wooden-horse
+    name: "The Trojan Horse"
+    era: "mythic"
+    kind: mechanism
+    mechanism: "The gift that carries the payload; enter through generosity and reveal inside the walls."
+    signals: [gift, free, giveaway, trojan, hidden inside, payload, open source, donate]
+    prompts:
+      - "What does Devin give away — a fixed bug in every open-source repo that asks? — where the gesture is the message?"
+    refs: []
+
+  - id: ouroboros-recursion
+    name: "Recursion / Escher / Borges' Library of Babel"
+    era: "1930s-1960s"
+    kind: mechanism
+    mechanism: "The system that contains or produces itself; self-reference makes the audience dizzy in a pleasurable way."
+    signals: [recursive, self-referential, infinite, meta, builds itself, escher, mirror, loop]
+    prompts:
+      - "Devin builds the tool that builds Devin demos; or livestreams itself fixing the livestream."
+    refs: ["Jorge Luis Borges, The Library of Babel (1941)"]
+
+  - id: sophie-calle
+    name: "Sophie Calle (Suite Vénitienne, The Hotel)"
+    era: "1979-1983"
+    kind: figure
+    mechanism: "Follow a rule-bound personal procedure into strangers' lives and document it; intimacy through method."
+    signals: [documented, diary, followed, strangers, procedure, intimate, surveillance, record everything]
+    prompts:
+      - "Devin shadows one developer's real week and publishes the diary of what it would have done differently."
+    refs: ["https://en.wikipedia.org/wiki/Sophie_Calle"]
+
+  - id: sol-lewitt
+    name: "Sol LeWitt's wall drawings"
+    era: "1968-"
+    kind: figure
+    mechanism: "The artist writes the instruction; anyone executes it, anywhere, and each execution is authentically the work — authorship lives in the idea, labour is delegated."
+    signals: [instructions, drafters, executed by, certificate, delegated, anyone can install, wall drawing, conceptual]
+    prompts:
+      - "The purest 'coworker not tool' image: a one-line spec, a hundred Devins executing it in parallel, every result legitimately the author's."
+    refs: ["https://en.wikipedia.org/wiki/Sol_LeWitt"]
+
+  - id: place-reddit
+    name: "r/place, the Million Dollar Homepage, Twitch Plays Pokémon"
+    era: "2005-2017"
+    kind: stunt
+    mechanism: "Thousands of tiny, rate-limited contributions accumulate into one visible artefact; the constraint on each participant is what makes the whole legible."
+    signals: [pixel, r/place, collaborative canvas, million, contributions, one pixel, crowd, collective, twitch plays]
+    prompts:
+      - "Bits to atoms: every merged PR lays a brick; the structure is the build log of a global swarm."
+    refs: ["https://en.wikipedia.org/wiki/R/place"]
+
+  - id: seti-folding
+    name: "SETI@home / Folding@home / Great Internet Mersenne Prime Search"
+    era: "1996-"
+    kind: stunt
+    mechanism: "Frame a legitimately hard problem so anyone's idle capacity contributes; the leaderboard and the eventual discovery are the story."
+    signals: [distributed, volunteer computing, prime, factor, seti, folding, leaderboard, contributed compute, discovery]
+    prompts:
+      - "Which real, scrutiny-proof problem could a fleet of Devins plus volunteer devs crack in a month, RSA-260 style?"
+    refs: ["https://en.wikipedia.org/wiki/Great_Internet_Mersenne_Prime_Search"]
+
+  - id: tino-sehgal
+    name: "Tino Sehgal (These Associations, This Progress)"
+    era: "2000s-2010s"
+    kind: figure
+    mechanism: "No objects, no documentation allowed; the work exists only as live human interaction, and the rule against recording creates demand."
+    signals: [no photos, undocumented, no recording, only in person, conversation, unrecorded, ephemeral]
+    prompts:
+      - "A demo that may not be filmed; the only record is what attendees tell others."
+    refs: ["https://en.wikipedia.org/wiki/Tino_Sehgal"]

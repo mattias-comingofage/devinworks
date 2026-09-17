@@ -1,0 +1,66 @@
+# Live briefs. Each find is scored against every brief; a find surfaces if it
+# clears min_score on at least one brief. Edit freely — this is the steering wheel.
+
+briefs:
+  - id: devin-stunt
+    name: "Devin: coworker, not a tool (Cognition x COA campaign)"
+    # Core: Devin is an autonomous coworker in the cloud, not a tool you operate.
+    # Next chapter: one high-agency dev directing a swarm of coworkers in parallel.
+    # Test: would a great engineer send this to another great engineer because it's sick?
+    # Territories: bits-to-atoms (code -> physical), real-world spectacle (only as byproduct
+    # of a real feat/participation), Devin-powered feat (legit achievement + documentary craft).
+    themes:
+      - "autonomous agents doing real work with a visible, verifiable result (RSA-260 precedent)"
+      - "many agents in parallel, swarms, abundance, mega-projects; multiplication not duplication"
+      - "code becoming physical: installations, bricks, machines driven by commits"
+      - "high-agency builder culture: open source, creative technologists, strange ingenious experiments"
+      - "legit technical feats given pageantry and documentary storytelling"
+      - "structured, limited, meaningful participation from developers worldwide"
+    keywords:
+      strong: [ai agent, agents, autonomous, swarm, fleet, parallel, coworker, colleague, code, coding, developer, developers, software engineer, programmer, open source, github, commit, feat, world first, record, cryptograph, factoring, compute]
+      medium: [live, real-time, public, installation, physical, robot, machine, 3d print, bricks, kinetic, hackathon, livestream, marathon, 24 hours, participat, crowdsourced, contributors, documentary, behind the scenes, verified, proof, benchmark]
+      weak: [tech, startup, launch, product, viral, stunt, spectacle, experiential, whimsical, clever, ingenious, experiment, indie, side project]
+    avoid: [deepfake, scam, layoffs, doom, replace humans, replaces engineers, job losses, slop]
+
+  - id: performance-art-stunts
+    name: "Performance-art-style brand stunts (general craft inspiration)"
+    themes:
+      - "a single bold gesture in a public space"
+      - "audience becomes the medium or the performer"
+      - "brands using art-world formats: durational, endurance, ritual, absurdist"
+    keywords:
+      strong: [stunt, performance art, guerrilla, installation, intervention, activation, flash mob, happening, takeover, projection, billboard hack]
+      medium: [public space, street, plaza, subway, airport, stadium, museum, gallery, durational, endurance, ritual, absurd]
+      weak: [experiential, immersive, pop-up, out of home, ooh, viral, creative, campaign, agency]
+    avoid: []
+
+scoring:
+  strong: 3
+  medium: 2
+  weak: 1
+  avoid: -4
+  title_multiplier: 2      # keyword hits in the title count double
+  min_score: 4
+  max_per_brief: 12
+  lookback_days: 10
+
+sources:
+  # name, url, kind (rss|atom)
+  - { name: "It's Nice That", url: "https://www.itsnicethat.com/articles.rss" }
+  - { name: "Creative Review", url: "https://www.creativereview.co.uk/feed/" }
+  - { name: "Ads of the World", url: "https://www.adsoftheworld.com/feed" }
+  - { name: "Adweek Creativity", url: "https://www.adweek.com/category/creativity/feed/" }
+  - { name: "The Drum Creative", url: "https://www.thedrum.com/rss/creative" }
+  - { name: "Campaign Live", url: "https://www.campaignlive.co.uk/rss/news" }
+  - { name: "Little Black Book", url: "https://www.lbbonline.com/news/feed" }
+  - { name: "Contagious", url: "https://www.contagious.com/feed" }
+  - { name: "Colossal", url: "https://www.thisiscolossal.com/feed/" }
+  - { name: "Hyperallergic", url: "https://hyperallergic.com/feed/" }
+  - { name: "Dezeen", url: "https://www.dezeen.com/feed/" }
+  - { name: "Creative Applications", url: "https://www.creativeapplications.net/feed/" }
+  - { name: "Hacker News (front)", url: "https://hnrss.org/frontpage" }
+  - { name: "The Verge", url: "https://www.theverge.com/rss/index.xml" }
+  - { name: "Muse by Clio", url: "https://musebyclio.com/feed" }
+  - { name: "Trend Hunter Marketing", url: "https://www.trendhunter.com/rss/category/Marketing" }
+  - { name: "Are.na blog", url: "https://www.are.na/editorial/feed/rss" }
+  - { name: "Vimeo Staff Picks", url: "https://vimeo.com/channels/staffpicks/videos/rss" }
