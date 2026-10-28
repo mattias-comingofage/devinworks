@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Photo Galaxy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+        "exifr": "https://cdn.jsdelivr.net/npm/exifr@7.1.3/dist/full.esm.mjs"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="stage"></div>
+
+  <header id="hud">
+    <h1>PHOTO GALAXY</h1>
+    <div id="stats">—</div>
+    <div id="source"></div>
+  </header>
+
+  <nav id="controls">
+    <div class="group" data-group="layout">
+      <span class="label">ARRANGE</span>
+      <button data-layout="galaxy" class="on" title="Rings = years, around = seasons (1)">GALAXY</button>
+      <button data-layout="globe" title="Where on Earth, newer floats higher (2)">GLOBE</button>
+      <button data-layout="atlas" title="Home at the center, distance on a log scale, time rises up (3)">ATLAS</button>
+      <button data-layout="timeline" title="Time runs along, hour of day around (4)">TIMELINE</button>
+    </div>
+    <div class="group" data-group="color">
+      <span class="label">COLOR</span>
+      <button data-color="hour" class="on">HOUR</button>
+      <button data-color="year">YEAR</button>
+      <button data-color="camera">CAMERA</button>
+      <button data-color="place">PLACE</button>
+    </div>
+    <div class="group">
+      <button id="toggle-lines" class="on" title="Link photos taken the same day">CONSTELLATIONS</button>
+      <button id="random" title="Fly to a random star (R)">RANDOM STAR</button>
+      <label class="button primary" for="pick-folder">LOAD PHOTOS</label>
+      <input id="pick-folder" type="file" webkitdirectory multiple hidden />
+      <label class="button" for="pick-files" title="Pick individual photos (works on phones)">PICK FILES</label>
+      <input id="pick-files" type="file" accept="image/*,.heic,.heif" multiple hidden />
+    </div>
+  </nav>
+
+  <div id="legend"></div>
+
+  <div id="progress" hidden><div class="bar"><i></i></div><span></span></div>
+
+  <div id="tooltip" hidden></div>
+
+  <aside id="panel" hidden>
+    <button id="close" aria-label="Close">×</button>
+    <div class="frame"><img id="photo" alt="" /><div id="photo-msg"></div></div>
+    <div class="meta">
+      <h2 id="p-date">—</h2>
+      <div id="p-place"></div>
+      <div id="p-camera"></div>
+      <div id="p-exposure"></div>
+      <div id="p-file"></div>
+      <div id="p-day"></div>
+    </div>
+    <div class="nav">
+      <button id="prev">◀ EARLIER</button>
+      <button id="next">LATER ▶</button>
+    </div>
+  </aside>
+
+  <div id="dropzone" hidden><div>DROP PHOTOS OR A FOLDER<br /><small>Metadata is read in your browser. Nothing is uploaded.</small></div></div>
+
+  <footer id="help">DRAG rotate · SCROLL/PINCH zoom · RIGHT-DRAG pan · WASD fly (SHIFT fast) · ←/→ earlier/later · CLICK a star</footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
